@@ -36,20 +36,102 @@ steps:
     Отобаражена главная страница с уведомлением "Successfully authenticated"
     
     
-- summary: |
-    Проверка входа пользователя с несуществующими логином и паролем
+    - summary: |
+    Проверка входа пользователя через Discord
 requirement: |
-    При неправильном логине или пароле пользователь должен получить сообщение об ошибке
-prerequisites:
-    Открыта страница логина
+    При синхронизации аккаунта через Discord пользователь должен войти в систему
+prerequisites: |
+   Зайти на сайт https://codebattle.hexlet.io/
 test-data: |
-    Логин = Логин = hexlet Пароль = badpass
+   Действующий аккаунт в Discord
+   Email = ilona@gmail.com
+   Пароль = password
+steps:
+    - На главной странице нажать кнопку "Sign in"
+    - Нажать кнопку "Sign in with Discord"
+    - Ввести логин и пароль 
+    - Нажать кнопку "Log in"
+  expected-result: |
+    Отобаражена главная страница с уведомлением "Successfully authenticated"
+    
+    
+    
+    - summary: |
+    Проверка входа пользователя с несуществующими Email
+requirement: |
+    При неправильном Email пользователь должен получить сообщение об ошибке
+prerequisites:
+      Зайти на сайт https://codebattle.hexlet.io/
+test-data: |
+    Email = ilona@gmail.com
+    Пароль = password
 steps:
     - на главной странице нажать кнопку "Sign in"
     - Ввести логин и пароль 
     - Нажать кнопку "Submit"
 expected-result: |
-    Пользователь должен попасть на главную страницу
+     Отображена ошибка "EMAIL_NOT_FOUND" на странице авторизации
+    
+        
+- summary: |
+    Проверка входа пользователя с несуществующими паролем
+requirement: |
+    При неправильном вводе пароля, пользователь должен получить сообщение об ошибке
+prerequisites:
+    Зайти на сайт https://codebattle.hexlet.io/
+test-data: |
+    Email = ilona@gmail.com
+    Пароль = badpassword
+steps:
+    - на главной странице нажать кнопку "Sign in"
+    - Ввести логин и пароль 
+    - Нажать кнопку "Submit"
+expected-result: |
+     Отображена ошибка "INVALID_PASSWORD" на странице авторизации
+    
+    
+- summary: |
+    Восстановление пароля
+requirement: |
+    Восстановление пароля, зарегистрированым пользователем
+prerequisites:
+    Зайти на сайт https://codebattle.hexlet.io/
+test-data: |
+    Email = ilona@gmail.com
+    Password = password_new
+steps:
+    - На главной странице нажать кнопку "Sign in"
+    - Нажать кнопку "Forgot your password"
+    - На странице "Forgot your password?" ввести Email
+    - Нажать кнопку "Submit"
+    - В приложении электронной почты открыть письмо от noreply@codebattle-5f929.firebaseapp.com
+    - Перейти по ссылке в письме
+    - На странице "Reset your password" ввести новый пароль
+    - Нажимать "Save"
+    - Зайти на главную страницу сайта (https://codebattle.hexlet.io/)
+    - нажать кнопку "Sign in"
+    - Ввести логин и пароль 
+    - Нажать кнопку "Submit"
+expected-result: |
+    Отобаражена главная страница с уведомлением "Successfully authenticated"
+    
+    
+        
+- summary: |
+    Проверка восстановление пароля с несуществующими Email
+requirement: |
+    При неправильном Email пользователь должен получить сообщение об ошибке
+prerequisites:
+    Зайти на сайт https://codebattle.hexlet.io/
+test-data: |
+    Email = плохойpass@gmail.com
+steps:
+    - на главной странице нажать кнопку "Sign in"
+    - Нажать кнопку "Forgot your password" 
+    - Ввести "Email"
+    - Нажать кнопку "Submit"
+expected-result: |
+     Отображена ошибка "EMAIL_NOT_FOUND" на странице восстановление пароля с заголовком "Forgot your password?"
     
     
     
