@@ -36,7 +36,7 @@ steps:
     Отобаражена главная страница с уведомлением "Successfully authenticated"
     
     
-    - summary: |
+- summary: |
     Проверка входа пользователя через Discord
 requirement: |
     При синхронизации аккаунта через Discord пользователь должен войти в систему
@@ -56,7 +56,7 @@ steps:
     
     
     
-    - summary: |
+- summary: |
     Проверка входа пользователя с несуществующими Email
 requirement: |
     При неправильном Email пользователь должен получить сообщение об ошибке
@@ -142,11 +142,11 @@ requirement: |
 prerequisites: |
     Зайти на сайт https://codebattle.hexlet.io/
 test-data: |
-    Niсkname = "pop"
-    Login = "12testertester12@mail.ru"
-    Password = "123456"
+    Niсkname = "bug"
+    Email = "bug@gmail.com"
+    Password = "123456789"
 steps:
-    - Нажимаем кнопку "Sign Up"
+    - Нажать кнопку "Sign Up"
     - Ввести "Nickname"
     - Ввести "Email"
     - Ввести "Password"
@@ -155,9 +155,148 @@ expected-result: |
     Отобаражена главная страница с уведомлением "Successfully authenticated"
     
     
+       
+- summary: |
+    Регистрация пользователя c Email без "@"
+requirement: |
+    Регистрация пользователя c неккоректным "email"
+prerequisites: |
+    Зайти на сайт https://codebattle.hexlet.io/
+test-data: |
+    Niсkname = "bug"
+    Email = "bug_gmail.com"
+    Password = "123456789"
+steps:
+    - Нажимать кнопку "Sign Up"
+    - Ввести "Nickname"
+    - Ввести "Email"
+    - Ввести "Password"
+    - Нажать кнопку "Submit"
+expected-result: |
+    на странице регистрация под полем "Email" отобаражена ошибка "Invalid email"
+    
+    
+- summary: |
+    Сменить имя ("Nikname") пользователя
+requirement: |
+    Пользователь может cменить своё имя
+prerequisites:
+    Зайти на сайт https://codebattle.hexlet.io/
+    Авторизироваться
+test-data: |
+    Email = test1@gmail.com
+    Nickname = "test1"
+    Password = "test123456"
+steps:
+    - На главной странице в хедере сайта нажать на своё имя (Nikname) или на аватар
+    - В выпадающем меню выбрать "Settings"
+    - В поле "Your name" стереть предыдущее имя и ввести новое
+    - Нажать "Save"
+expected-result: |
+    Имя ("Nikname") изменено, отобаражено уведомление "Your settings has been changed" 
+    
+    
+- summary: |
+    Сменить стандартный язык програмтирования через настройки 
+requirement: |
+    Пользователь может cменить язык програмтирования через настройки 
+prerequisites:
+    Зайти на сайт https://codebattle.hexlet.io/
+    Авторизироваться
+test-data: |
+    Email = test1@gmail.com
+    Nickname = "test2"
+    Password = "test123456"
+steps:
+    - На главной странице в хедере сайта нажать на своё имя (Nikname) или на аватар
+    - В выпадающем меню выбрать "Settings"
+    - В выпадающем меню "Your weapon" выбрать язык програмтирования
+    - Нажать "Save"
+expected-result: |
+    Стандартный язык програмтирования изменен, отобаражено уведомление "Your settings has been changed" 
+    
+    
+        
+- summary: |
+    Сменить "Select sound type"
+requirement: |
+    Пользователь может cменить звук "Select sound type"
+prerequisites:
+    Зайти на сайт https://codebattle.hexlet.io/
+    Авторизироваться
+test-data: |
+    Email = test1@gmail.com
+    Nickname = "test2"
+    Password = "test123456"
+steps:
+    - На главной странице в хедере сайта нажать на своё имя (Nikname) или на аватар
+    - В выпадающем меню выбрать "Settings"
+    - В подзаголовке "Select sound type" выбрать чекбокс с нужным звуком
+    - Нажать "Save"
+expected-result: |
+    Стандартный звук изменен, отобаражено уведомление "Your settings has been changed" 
+   
+   
+- summary: |
+    Выбрать громкость звука
+requirement: |
+    Пользователь может регулировать громкость звука
+prerequisites:
+    Зайти на сайт https://codebattle.hexlet.io/
+    Авторизироваться
+test-data: |
+    Email = test1@gmail.com
+    Nickname = "test2"
+    Password = "test123456"
+steps:
+    - На главной странице в хедере сайта нажать на своё имя (Nikname) или на аватар
+    - В выпадающем меню выбрать "Settings"
+    - В подзаголовке "Select sound level" отрегулировать громкость звука ползунком
+    - Нажать "Save"
+expected-result: |
+    Громкость звука изменена, отобаражено уведомление "Your settings has been changed" 
+    
+    
+- summary: |
+    Проверить свою статистику 
+requirement: |
+    Пользователь доступна своя статистика
+prerequisites:
+    Зайти на сайт https://codebattle.hexlet.io/
+    Авторизироваться
+test-data: |
+    Email = test1@gmail.com
+    Nickname = "test1"
+    Password = "test123456"
+steps:
+    - На главной странице в хедере сайта нажать на своё имя (Nikname) или на аватар
+    - В выпадающем меню выбрать "My Profile"
+expected-result: |
+    Отобаражена страница с подзаголовком "STATISTICS" с рангом и количество матчей, график побед поражений и сдач, график активности
+    
+    
+- summary: |
+    Проверить всех количество матчей
+requirement: |
+    Пользователь доступна своя статистика
+prerequisites:
+    Зайти на сайт https://codebattle.hexlet.io/
+    Авторизироваться
+test-data: |
+    Email = test1@gmail.com
+    Nickname = "test1"
+    Password = "test123456"
+steps:
+    - На главной странице в хедере сайта нажать на своё имя (Nikname) или на аватар
+    - В выпадающем меню выбрать "My Profile"
+expected-result: |
+    Отобаражена страница с подзаголовком "STATISTICS" с рангом и количество матчей, график побед поражений и сдач, график активности
+    
+    
+  Select sound type  
 
 Users rating
-    
+возможность сдаться
     
     
     
