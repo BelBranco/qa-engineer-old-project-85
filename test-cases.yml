@@ -291,7 +291,37 @@ steps:
     - В выпадающем меню выбрать "My Profile"
 expected-result: |
     Отобаражена страница с подзаголовком "STATISTICS" с рангом и количество матчей, график побед поражений и сдач, график активности
-    
+
+
+
+
+- summary: |
+    Создать игру с ботом зарегистрированному пользователю
+requirement: |
+    Пользователь доступна своя статистика
+prerequisites:
+    Зайти на сайт https://codebattle.hexlet.io/
+    Авторизироваться
+test-data: |
+    Email = test1@gmail.com
+    Nickname = "test1"
+    Password = "test123456"
+steps:
+    - На главной странице нажать кнопку "Create a game"
+    - В появившимся окне сложность (Level) бота от одной звезды, до четырёх (например одну)
+    - В пункте "Game Type" выбрать игру с ботом "With a bot"
+    - В пункте "Time control" выбрать время матча (например 10 min)
+    - В пункте "Choose task by name or tags" выбрать задачу (например Rect_area)
+    - Нажать кнопку "Create Battle"
+expected-result: |
+    Отобаражена страница игры с ботом
+
+
+
+
+
+
+
     
   Select sound type  
 
