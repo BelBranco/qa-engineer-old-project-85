@@ -1,1 +1,57 @@
+Проверка входа пользователя с существующими логином и паролем
+Проверка входа пользователя через Github
 
+- summary: |
+    Проверка входа пользователя через Discord
+status: pass
+      
+- summary: |
+    Проверка входа пользователя с несуществующими Email
+  status: pass
+  
+- summary: |
+    Проверка входа пользователя с несуществующими паролем
+status: pass
+      
+- summary: |
+    Восстановление пароля
+status: pass
+      
+- summary: |
+    Проверка восстановление пароля с несуществующими Email
+status: pass
+      
+- summary: |
+    Регистрация пользователя
+status: pass
+      
+- summary: |
+    Регистрация пользователя c Email без "@"
+status: pass
+      
+- summary: |
+    Сменить имя ("Nikname") пользователя
+status: pass
+      
+- summary: |
+    Сменить стандартный язык програмтирования через настройки 
+status: pass
+      
+- summary: |
+    Сменить "Select sound type"
+status: pass
+      
+- summary: |
+    Выбрать громкость звука
+status: pass
+    
+- summary: |
+    Проверить свою статистику 
+status: pass
+    
+- summary: |
+    Проверить всех количество матчей
+status: pass
+    
+    
+    
