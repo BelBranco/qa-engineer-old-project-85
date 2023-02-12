@@ -832,6 +832,68 @@ expected-result: |
 
 
 
+- summary: |
+    Проверка возможности просматривать завершенные турниры
+requirement: |
+    Зарегистрированный пользователь может просматривать матчи из завершенных турниров
+prerequisites:
+    Зайти на сайт https://codebattle.hexlet.io/
+    Авторизироваться
+test-data: |
+    Email = test1@gmail.com
+    Password = "test123456"
+steps:
+    - На главной странице открыть вкладку "TOURNAMENTS"
+    - Под заголовком "Completed tournaments" выбрать нужный турнир (например "Test 2")
+    - Нажать красную кнопку "Show"
+    - Выбрать нужный матч (например в подзаголовке Final)
+    - Нажать зелёную кнопку "Show"
+  expected-result: |
+    Отобаражена страница выбранной игры в турнире
+
+
+- summary: |
+    Проверка возможности принять участие в турнире
+requirement: |
+    Зарегистрированный пользователь может принять участие в турнире
+prerequisites:
+    Зайти на сайт https://codebattle.hexlet.io/
+    Авторизироваться
+test-data: |
+    Email = test1@gmail.com
+    Password = "test123456"
+steps:
+    - На главной странице открыть вкладку "TOURNAMENTS"
+    - Под заголовком "Live tournaments" выбрать нужный турнир (например "qa-engineer-project-85")
+    - Нажать красную кнопку "Show"
+    - Справа от загаловка "Qa-Engineer-Project-85" нажать кнопку "Join"
+    - Нажать зелёную кнопку "Show"
+  expected-result: |
+    Отобаражена страница выбранной игры в турнире
+
+
+
+ - summary: |
+    Отправка сообщений в чате раздела "Tournament"
+ requirement: |
+    Зарегистрированный пользователь может писать сообщения в чат турнира
+ prerequisites:
+    Перейти на страницу веб-приложения "CodeBattle" по ссылке (https://codebattle.hexlet.io/tournaments).
+    Авторизоваться в приложении "CodeBattle"
+ test-data: |
+    Email = test1@gmail.com
+    Password = "test123456"
+ steps:
+    - На главной странице открыть вкладку "TOURNAMENTS"
+    - Под заголовком "Live tournaments" выбрать нужный турнир (например "qa-engineer-project-85")
+    - В поле ввода текста написать сообщение (например "Баг залез в qa-engineer-project-85!!!!")
+    - Нажать кнопку "Send" или "Enter" на клавиатуре
+ expected-result: |
+    В чате отображено отправленное сообщение
+
+
+
+
 
     
   Select sound type  
