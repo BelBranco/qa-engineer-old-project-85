@@ -14,7 +14,7 @@ steps:
     - Ввести логин и пароль 
     - Нажать кнопку "Submit"
 expected-result: |
-    Отобаражена главная страница с уведомлением "Successfully authenticated"
+    Отображена главная страница с уведомлением "Successfully authenticated"
    
    
 - summary: |
@@ -31,7 +31,7 @@ steps:
     - Ввести логин и пароль 
     - Нажать кнопку "Submit"
 expected-result: |
-    Отобаражена главная страница с уведомлением "Successfully authenticated"
+    Отображена главная страница с уведомлением "Successfully authenticated"
    
    
 - summary: |
@@ -48,7 +48,7 @@ steps:
     - Ввести логин и пароль 
     - Нажать кнопку "Submit"
 expected-result: |
-    Отобаражена главная страница с уведомлением "Successfully authenticated"
+    Отображена главная страница с уведомлением "Successfully authenticated"
 
 
 - summary: |
@@ -65,7 +65,7 @@ steps:
     - Ввести логин и пароль 
     - Нажать кнопку "Submit"
 expected-result: |
-    Отобаражена главная страница с уведомлением "Successfully authenticated"
+    Отображена главная страница с уведомлением "Successfully authenticated"
     
    
 - summary: |
@@ -82,7 +82,7 @@ steps:
     - Ввести логин и пароль 
     - Нажать кнопку "Submit"
 expected-result: |
-    Отобаражена главная страница с уведомлением "Successfully authenticated"
+    Отображена главная страница с уведомлением "Successfully authenticated"
    
    
 - summary: |
@@ -101,7 +101,7 @@ steps:
     - Ввести логин и пароль 
     - Нажать кнопку "Sign in"
   expected-result: |
-    Отобаражена главная страница с уведомлением "Successfully authenticated"
+    Отображена главная страница с уведомлением "Successfully authenticated"
     
     
 - summary: |
@@ -120,7 +120,7 @@ steps:
     - Ввести логин и пароль 
     - Нажать кнопку "Log in"
   expected-result: |
-    Отобаражена главная страница с уведомлением "Successfully authenticated"
+    Отображена главная страница с уведомлением "Successfully authenticated"
     
     
     
@@ -181,7 +181,7 @@ steps:
     - Ввести логин и пароль 
     - Нажать кнопку "Submit"
 expected-result: |
-    Отобаражена главная страница с уведомлением "Successfully authenticated"
+    Отображена главная страница с уведомлением "Successfully authenticated"
     
     
         
@@ -220,7 +220,7 @@ steps:
     - Ввести "Password"
     - Нажать кнопку "Submit"
 expected-result: |
-    Отобаражена главная страница с уведомлением "Successfully authenticated"
+    Отображена главная страница с уведомлением "Successfully authenticated"
     
     
        
@@ -241,7 +241,7 @@ steps:
     - Ввести "Password"
     - Нажать кнопку "Submit"
 expected-result: |
-    на странице регистрация под полем "Email" отобаражена ошибка "Invalid email"
+    на странице регистрация под полем "Email" отображена ошибка "Invalid email"
     
     
 - summary: |
@@ -261,7 +261,7 @@ steps:
     - В поле "Your name" стереть предыдущее имя и ввести новое
     - Нажать "Save"
 expected-result: |
-    Имя ("Nikname") изменено, отобаражено уведомление "Your settings has been changed" 
+    Имя ("Nikname") изменено, отображено уведомление "Your settings has been changed" 
     
     
 - summary: |
@@ -281,7 +281,7 @@ steps:
     - В выпадающем меню "Your weapon" выбрать язык програмтирования
     - Нажать "Save"
 expected-result: |
-    Стандартный язык програмтирования изменен, отобаражено уведомление "Your settings has been changed" 
+    Стандартный язык програмтирования изменен, отображено уведомление "Your settings has been changed" 
     
     
         
@@ -302,7 +302,7 @@ steps:
     - В подзаголовке "Select sound type" выбрать чекбокс с нужным звуком
     - Нажать "Save"
 expected-result: |
-    Стандартный звук изменен, отобаражено уведомление "Your settings has been changed" 
+    Стандартный звук изменен, отображено уведомление "Your settings has been changed" 
    
    
 - summary: |
@@ -322,7 +322,7 @@ steps:
     - В подзаголовке "Select sound level" отрегулировать громкость звука ползунком
     - Нажать "Save"
 expected-result: |
-    Громкость звука изменена, отобаражено уведомление "Your settings has been changed" 
+    Громкость звука изменена, отображено уведомление "Your settings has been changed" 
     
     
 - summary: |
@@ -340,7 +340,7 @@ steps:
     - На главной странице в хедере сайта нажать на своё имя (Nikname) или на аватар
     - В выпадающем меню выбрать "My Profile"
 expected-result: |
-    Отобаражена страница с подзаголовком "STATISTICS" с рангом и количество матчей, график побед поражений и сдач, график активности
+    Отображена страница с подзаголовком "STATISTICS" с рангом и количество матчей, график побед поражений и сдач, график активности
     
     
 - summary: |
@@ -358,7 +358,7 @@ steps:
     - На главной странице в хедере сайта нажать на своё имя (Nikname) или на аватар
     - В выпадающем меню выбрать "My Profile"
 expected-result: |
-    Отобаражена страница с подзаголовком "STATISTICS" с рангом и количество матчей, график побед поражений и сдач, график активности
+    Отображена страница с подзаголовком "STATISTICS" с рангом и количество матчей, график побед поражений и сдач, график активности
 
 
 - summary: |
@@ -380,7 +380,7 @@ steps:
     - В пункте "Choose task by name or tags" выбрать задачу (например Rect_area)
     - Нажать кнопку "Create Battle"
 expected-result: |
-    Отобаражена страница игры с ботом
+    Отображена страница игры с ботом
 
 
 
@@ -406,7 +406,7 @@ steps:
     - В пункте "Choose task by name or tags" выбрать задачу (например Rect_area)
     - Нажать кнопку "Create Battle"
 expected-result: |
-    Отобаражена страница игры с ботом
+    Отображена страница игры с ботом
 
 
 
@@ -430,7 +430,7 @@ steps:
     - В пункте "Choose task by name or tags" выбрать задачу (например Rect_area)
     - Нажать кнопку "Create Battle"
 expected-result: |
-    Отобаражена страница игры с ботом
+    Отображена страница игры с ботом
 
 
 - summary: |
@@ -452,7 +452,7 @@ steps:
     - В пункте "Choose task by name or tags" выбрать задачу (например Rect_area)
     - Нажать кнопку "Create Battle"
 expected-result: |
-    Отобаражена страница игры с ботом
+    Отображена страница игры с ботом
 
 
 
@@ -475,7 +475,7 @@ steps:
     - В пункте "Choose task by name or tags" выбрать задачу (например Rect_area)
     - Нажать кнопку "Create Battle"
 expected-result: |
-    Отобаражена страница игры с ботом
+    Отображена страница игры с ботом
 
 
 
@@ -501,7 +501,7 @@ steps:
     - Авторизироваться
     - Во вкладке "Lobby" напротив прошлой созданной игры нажать кнопку "Show"
 expected-result: |
-    Отобаражена страница игры с ботом
+    Отображена страница игры с ботом
 
 - summary: |
     Создание игры зарегистрированного пользователя с другим зарегистрированным пользователем
@@ -521,7 +521,7 @@ steps:
     - В пункте "Time control" выбрать время матча (например 10 min)
     - В пункте "Choose task by name or tags" выбрать задачу (например Rect_area)
     - Нажать кнопку "Create Battle"
-    - Отобаражена страница "Waiting for an opponent"
+    - Отображена страница "Waiting for an opponent"
 expected-result: |
     Когда другой пользователь присоединиться, будет отображена страница игры
 
@@ -796,7 +796,7 @@ steps:
     - На главной странице нажать кнопку отображено уведомление о приглашении "Я_не_баг invited you"
     - Нажать кнопку "Accept"
     - На странице игры нажать красную кнопку с изображением флага
-    - Отобаражено окно с заголовком "Are you sure you want to give up?"
+    - Отображено окно с заголовком "Are you sure you want to give up?"
     - В окне нажать кнопку "Give up"
 expected-result: |
     Отображена окно "If you read this you've lost the game" 
@@ -821,11 +821,11 @@ steps:
     - В пункте "Choose task by name or tags" выбрать задачу (например Rect_area)
     - Нажать кнопку "Create Battle"
     - На странице игры нажать красную кнопку с изображением флага
-    - Отобаражено окно с заголовком "Are you sure you want to give up?"
+    - Отображено окно с заголовком "Are you sure you want to give up?"
     - В окне нажать кнопку "Give up"
     - Нажать синюю кнопку "Rematch"
 expected-result: |
-    Отобаражена страница игры 
+    Отображена страница игры 
 
 
 
@@ -848,7 +848,7 @@ steps:
     - Нажать кнопку "Create Battle"
     - Нажать синюю кнопку "Back to Home"
 expected-result: |
-    Отобаражена главная страница сайта
+    Отображена главная страница сайта
 
 
 
@@ -1005,7 +1005,7 @@ steps:
     - Нажать красную кнопку "Show" напротив нужной игры (например "Я_не_баг(190) PavlutOnWire(bot) 02.12 02:00")
     - Нажать кнопку "Rematch"
   expected-result: |
-    Отобаражена страница игры
+    Отображена страница игры
 
 
 
@@ -1039,12 +1039,12 @@ test-data: |
 steps:
     - На главной странице нажать кнопку "TRY SIMPLE BATTLE"
     - На странице игры нажать красную кнопку с изображением флага
-    - Отобаражено окно с заголовком "Are you sure you want to give up?"
+    - Отображено окно с заголовком "Are you sure you want to give up?"
     - В окне нажать кнопку "Give up"
 expected-result: |
-    Отобаражена окно "If you read this you've lost the game"
-    На редакторе кода отобаражена картинка белого флага
-    Отобаражена надпись "Your opponent has won the game" 
+    Отображена окно "If you read this you've lost the game"
+    На редакторе кода отображена картинка белого флага
+    Отображена надпись "Your opponent has won the game" 
 
 
 
@@ -1059,7 +1059,7 @@ test-data: |
 steps:
     - На главной странице нажать кнопку "TRY SIMPLE BATTLE"
 expected-result: |
-    Отобаражена страница игры с ботом
+    Отображена страница игры с ботом
 
 
 
@@ -1075,7 +1075,7 @@ steps:
     - На главной странице нажать кнопку "TRY SIMPLE BATTLE"
     - Нажать синюю кнопку "Back to Home"
 expected-result: |
-    Отобаражена начальная страница сайта
+    Отображена начальная страница сайта
 
 
 
@@ -1222,7 +1222,7 @@ steps:
     - Выбрать нужный матч (например в подзаголовке Final)
     - Нажать зелёную кнопку "Show"
   expected-result: |
-    Отобаражена страница выбранной игры в турнире
+    Отображена страница выбранной игры в турнире
 
 
 - summary: |
@@ -1242,7 +1242,7 @@ steps:
     - Справа от загаловка "Qa-Engineer-Project-85" нажать кнопку "Join"
     - Нажать зелёную кнопку "Show"
   expected-result: |
-    Отобаражена страница выбранной игры в турнире
+    Отображена страница выбранной игры в турнире
 
 
  - summary: |
@@ -1853,7 +1853,7 @@ steps:
     - На главной странице нажать с двумя мечами в хедере сайта 
     - Нажимаем на кнопку "Accept"
 expected-result: |
-    Отобаражена страница игры
+    Отображена страница игры
     
        
 - summary: |
@@ -1939,6 +1939,29 @@ steps:
 expected-result: |
     Осуществлен выход из аккаунта, отображена начальная страница сайта
  
-    
+ 
+- summary: |
+    Проверить возможность отправить "Feedback"
+requirement: |
+    Зарегистрированный пользователь может воспользоваться обратной связью
+prerequisites:
+    Зайти на сайт https://codebattle.hexlet.io/
+    Авторизироваться
+test-data: |
+    Email = test1@gmail.com
+    Nickname = "test1"
+    Password = "test123456"
+steps:
+    - На главной странице нажать кнопку "Create a game"
+    - В появившимся окне сложность (Level) задачи от одной звезды, до четырёх (например одну)
+    - В пункте "Game Type" выбрать игру с ботом "With a bot"
+    - В пункте "Time control" выбрать время матча (например 10 min)
+    - В пункте "Choose task by name or tags" выбрать задачу (например Rect_area)
+    - Нажать кнопку "Create Battle"
+    - В правом нижнем углу нажать "Send Feedback"
+    - В открывшимся окне выбрать тип обратной связи (например "improvement")
+    - В "Message" написать текст сообщения (например "было бы лучше добавить возможность обратной связи на главную страницу тоже"
+expected-result: |
+    Отображена уведомление о успешной отправки сообщения
     
     
