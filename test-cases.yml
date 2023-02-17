@@ -1326,10 +1326,10 @@
     Зайти на сайт https://codebattle.hexlet.io/
     Авторизироваться
   test-data: |
-     Первая авторизация: Email = "test1@gmail.com", Password = "test123456"
-     "Type" = "individual"
-     "Access Type" = "token"
-     Вторая авторизация: Email = "Я_не_баг@gmail.com", Password =  "123456789_Bug"
+    Первая авторизация: Email = "test1@gmail.com", Password = "test123456"
+    "Type" = "individual"
+    "Access Type" = "token"
+    Вторая авторизация: Email = "Я_не_баг@gmail.com", Password =  "123456789_Bug"
   steps:
     - На главной странице в хедере сайта нажать на своё имя (Nikname) или на аватар
     - В выпадающем меню выбрать "Tournaments"
@@ -1359,7 +1359,7 @@
     Первая авторизация: Email = "test1@gmail.com", Password = "test123456"
     "Type" = "individual"
     "Access Type" = "public"
-     Вторая авторизация: Email = "Я_не_баг@gmail.com", Password =  "123456789_Bug"
+    Вторая авторизация: Email = "Я_не_баг@gmail.com", Password =  "123456789_Bug"
   steps:
     - На главной странице в хедере сайта нажать на своё имя (Nikname) или на аватар
     - В выпадающем меню выбрать "Tournaments"
@@ -1418,7 +1418,7 @@
     Первая авторизация: Email = "test1@gmail.com", Password = "test123456"
     "Type" = "team"
     "Access Type" = "public"
-     Вторая авторизация: Email = "Я_не_баг@gmail.com", Password =  "123456789_Bug"
+    Вторая авторизация: Email = "Я_не_баг@gmail.com", Password =  "123456789_Bug"
   steps:
     - На главной странице в хедере сайта нажать на своё имя (Nikname) или на аватар
     - В выпадающем меню выбрать "Tournaments"
@@ -1507,7 +1507,7 @@
     Первая авторизация: Email = "test1@gmail.com", Password = "test123456"
     "Type" = "stairway"
     "Access Type" = "public"
-     Вторая авторизация: Email = "Я_не_баг@gmail.com", Password =  "123456789_Bug"
+    Вторая авторизация: Email = "Я_не_баг@gmail.com", Password =  "123456789_Bug"
   steps:
     - На главной странице в хедере сайта нажать на своё имя (Nikname) или на аватар
     - В выпадающем меню выбрать "Tournaments"
@@ -3230,10 +3230,10 @@
     Зайти на сайт https://codebattle.hexlet.io/
     Авторизироваться
   test-data: |
-     Первая авторизация: Email = "test1@gmail.com", Password = "test123456"
-     "Type" = "individual"
-     "Access Type" = "token"
-     Вторая авторизация: Email = "Я_не_баг@gmail.com", Password =  "123456789_Bug"
+    Первая авторизация: Email = "test1@gmail.com", Password = "test123456"
+    "Type" = "individual"
+    "Access Type" = "token"
+    Вторая авторизация: Email = "Я_не_баг@gmail.com", Password =  "123456789_Bug"
   steps:
     - На главной странице в хедере сайта нажать на своё имя (Nikname) или на аватар
     - В выпадающем меню выбрать "Tournaments"
@@ -3260,10 +3260,10 @@
     Зайти на сайт https://codebattle.hexlet.io/
     Авторизироваться
   test-data: |
-     Первая авторизация: Email = "test1@gmail.com", Password = "test123456"
+    Первая авторизация: Email = "test1@gmail.com", Password = "test123456"
     "Type" = "individual"
     "Access Type" = "public"
-     Вторая авторизация: Email = "Я_не_баг@gmail.com", Password =  "123456789_Bug"
+    Вторая авторизация: Email = "Я_не_баг@gmail.com", Password =  "123456789_Bug"
   steps:
     - На главной странице в хедере сайта нажать на своё имя (Nikname) или на аватар
     - В выпадающем меню выбрать "Tournaments"
@@ -3319,10 +3319,10 @@
     Зайти на сайт https://codebattle.hexlet.io/
     Авторизироваться
   test-data: |
-     Первая авторизация: Email = "test1@gmail.com", Password = "test123456"
+    Первая авторизация: Email = "test1@gmail.com", Password = "test123456"
     "Type" = "team"
     "Access Type" = "public"
-     Вторая авторизация: Email = "Я_не_баг@gmail.com", Password =  "123456789_Bug"
+    Вторая авторизация: Email = "Я_не_баг@gmail.com", Password =  "123456789_Bug"
   steps:
     - На главной странице в хедере сайта нажать на своё имя (Nikname) или на аватар
     - В выпадающем меню выбрать "Tournaments"
@@ -3408,10 +3408,10 @@
     Зайти на сайт https://codebattle.hexlet.io/
     Авторизироваться
   test-data: |
-     Первая авторизация: Email = "test1@gmail.com", Password = "test123456"
+    Первая авторизация: Email = "test1@gmail.com", Password = "test123456"
     "Type" = "stairway"
     "Access Type" = "public"
-     Вторая авторизация: Email = "Я_не_баг@gmail.com", Password =  "123456789_Bug"
+    Вторая авторизация: Email = "Я_не_баг@gmail.com", Password =  "123456789_Bug"
   steps:
     - На главной странице в хедере сайта нажать на своё имя (Nikname) или на аватар
     - В выпадающем меню выбрать "Tournaments"
