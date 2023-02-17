@@ -42,7 +42,13 @@
   test-data: |
     Email = ilona@gmail.com
     Пароль = password
-  steps:---
+  steps:
+    - на главной странице нажать кнопку "Sign in"
+    - Ввести логин и пароль 
+    - Нажать кнопку "Submit"
+  expected-result: |
+    Отображена главная страница с уведомлением "Successfully authenticated"
+    
 - summary: |
     Проверка входа пользователя с существующими логином и паролем
   requirement: |
