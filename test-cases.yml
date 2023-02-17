@@ -1283,8 +1283,8 @@
     Авторизироваться
   test-data: |
      Первая авторизация: Email = "test1@gmail.com", Password = "test123456"
-    "Type" = "individual"
-    "Access Type" = "token"
+     "Type" = "individual"
+     "Access Type" = "token"
      Вторая авторизация: Email = "Я_не_баг@gmail.com", Password =  "123456789_Bug"
   steps:
     - На главной странице в хедере сайта нажать на своё имя (Nikname) или на аватар
